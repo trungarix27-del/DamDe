@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dâm Tu Thần Bút - Remix by Thích Tâm Phuk</title>
+    
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- CRITICAL PERFORMANCE OPTIMIZATION: Module Preload -->
+    <link rel="modulepreload" href="https://aistudiocdn.com/react@^19.2.1" />
+    <link rel="modulepreload" href="https://aistudiocdn.com/react-dom@^19.2.1/" />
+    <link rel="modulepreload" href="https://aistudiocdn.com/@google/genai@^1.31.0" />
+
+    <script>
+      // Force dark mode
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    </script>
+    <style>
+      :root {
+        --bg-color: #f9fafb;
+        --text-color: #111827;
+        --primary-color: #1db954;
+      }
+      .dark {
+        --bg-color: #050805;
+        --text-color: #e2e8f0;
+      }
+
+      /* Critical CSS for immediate styling before Tailwind/React loads */
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      
+      #root {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050805; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #262a26; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3c403c; 
+      }
+
+      .glass-panel {
+        background: rgba(5, 8, 5, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      .prose-content p {
+        margin-bottom: 1.5em;
+        line-height: 1.8;
+      }
+
+      .app-loader {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-color);
+      }
+
+      .loader-spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid rgba(29, 185, 84, 0.2);
+        border-radius: 50%;
+        border-top-color: var(--primary-color);
+        animation: spin 1s ease-in-out infinite;
+        margin-bottom: 20px;
+      }
+
+      .loader-text {
+        color: var(--primary-color);
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.4; } }
+    </style>
+<link rel="stylesheet" href="/SGTT/index.css">
+</head>
+  <body>
+    <div id="root">
+        <div class="app-loader">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Đang kết nối Dâm Tu Thần Bút...</div>
+        </div>
+    </div>
+  <script type="module" src="/SGTT/index.tsx"></script>
+</body>
+</html>
+

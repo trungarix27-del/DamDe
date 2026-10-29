@@ -1,0 +1,8 @@
+{
+  "name": "Remix Dâm Tu Thần Bút V1.0",
+  "description": "By Thich Tam Phuk",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

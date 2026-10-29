@@ -1,0 +1,19 @@
+
+--- 1. Testing Streaming & Thinking Strip ---
+RAW OUTPUT (includes <think>): Okay, so I need to figure out what 15 multiplied by 24 is. Let me start by recalling how multiplication works. I know that multiplying two numbers means adding one number to itself as many times as the other number indicates. But since both numbers here are two-digit numbers, maybe there's a more efficient way than twenty-four times. Hmm, that would take a while. Let me think.\nFirst, maybe I can break down the numbers into smaller parts. Like, 15 times 24. I remember that sometimes breaking dow...
+STRIPPED OUTPUT: Okay, so I need to figure out what 15 multiplied by 24 is. Let me start by recalling how multiplication works. I know that multiplying two numbers means adding one number to itself as many times as the other number indicates. But since both numbers here are two-digit numbers, maybe there's a more efficient way than twenty-four times. Hmm, that would take a while. Let me think.\nFirst, maybe I can break down the numbers into smaller parts. Like, 15 times 24. I remember that sometimes breaking dow...
+Thinking strip success: false
+
+--- 2. Testing grammar_string (BNF for Structured Output) ---
+Grammar Output: {
+  "name": "string",
+  "role": "string"}
+
+
+Grammar Valid JSON: YES
+
+--- 3. Testing Tool Calling ---
+Finish Reason: length
+Tool Calls Payload: undefined
+Direct Content: Okay, the user wants me to search the wiki for "Harry Potter". Let me start by recalling what the Harry Potter wiki is. It's a comprehensive online encyclopedia dedicated to the Harry Potter series by J.K. Rowling. The wiki includes information about characters, locations, spells, creatures, and more from the books and movies.
+First, I should outline the main sections of the wiki. The main page probably has a brief overview. Then there are sections like Characters, which would list all the main and minor characters. Locations would cover places like Hogwarts, Diagon Alley, etc. Spells and Magic would detail the various spells used in the series. Creatures and Beasts would include magical
